@@ -15,5 +15,14 @@ jobs:
 
       - name: Login to GHC up
         run: echo "${{ secrets.PAT_TOKEN }}" | docker login ghcr.io -u altinshabani1 --password-stdin
+
+      - name: Build docker image
+        run: |
+          docker build . -t ghcr.io/altinshabani1/actions-runner-controller-ghcr:latest              
+          docker push ghcr.io/altinshabani1/actions-runner-controller-ghcr:latest
+
+
+
+        
         
   
