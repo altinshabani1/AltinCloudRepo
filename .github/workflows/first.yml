@@ -24,4 +24,4 @@ jobs:
           subject: "Deployment Step - Copy App Success"
           to: "altinshabani276@gmail.com"
           from: "altinshabani276@gmail.com"
-          body: "Step: test."
+          body: "Step: test.."
