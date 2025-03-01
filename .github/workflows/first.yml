@@ -13,7 +13,7 @@ jobs:
       - name: Checkout out repository
         uses: actions/checkout@v2
 
-      - name: Login to GHC
+      - name: Login to GHC up
         run: echo "${{ secrets.PAT_TOKEN }}" | docker login ghcr.io -u altinshabani1 --password-stdin
         
   
