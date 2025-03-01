@@ -14,8 +14,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Login to GHC
-        run: |
-          docker login -altinshabani1 --password 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
-      
+        run: echo "${{ secrets.PAT_TOKEN }}" | docker login ghcr.io -u altinshabani1 --password-stdin
         
   
